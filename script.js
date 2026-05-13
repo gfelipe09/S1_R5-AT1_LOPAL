@@ -1,7 +1,9 @@
 let soma = 0;
+let historico = ""
 
 for (let i = 1; i <= 10; i++){
-    soma = soma + i;
+    soma += i;
 
-    console.log(`Número atual: ${i} | Soma acumulada: ${soma}`);}
-alert(`Resultado final: ${soma}`);
+    historico += `Somando ${i}: Total parcial = ${soma}\n`;
+}
+alert(`${historico}\n`);

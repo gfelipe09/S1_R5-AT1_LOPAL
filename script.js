@@ -1,9 +1,13 @@
-let soma = 0;
-let historico = ""
+let repeticoes;
 
-for (let i = 1; i <= 10; i++){
-    soma += i;
+do {
 
-    historico += `Somando ${i}: Total parcial = ${soma}\n`;
-}
-alert(`${historico}\n`);
+    repeticoes = Number(prompt("Insira uma das opções para continuar: [1]  para Inserir produto, [2] para Listar produto ou [3] para Sair. "));
+
+} while (isNaN(repeticoes) || repeticoes != 3)
+
+if (repeticoes == 3) {
+
+alert("Sistema encerrado")
+
+};

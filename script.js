@@ -1,13 +1,21 @@
-let repeticoes;
+let num;
+let soma = 0;
+let contador = 0;
 
 do {
 
-    repeticoes = Number(prompt("Insira uma das opções para continuar: [1]  para Inserir produto, [2] para Listar produto ou [3] para Sair. "));
+    num = Number(prompt("Insira um número qualquer: "));
 
-} while (isNaN(repeticoes) || repeticoes != 3)
+    if (isNaN(num) || num !== 0) {
 
-if (repeticoes == 3) {
+        soma = soma + num;
+        contador++;
 
-alert("Sistema encerrado")
+    }
 
-};
+} while (num !== 0);
+
+let media = contador ? soma / contador: 0;
+
+alert(`\nQuantidade de Números: ${contador} \nSoma: ${soma} \nMédia: ${media}`);
+

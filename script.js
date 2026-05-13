@@ -6,7 +6,7 @@ do {
 
     num = Number(prompt("Insira um número qualquer: "));
 
-    if (isNaN(num) || num !== 0) {
+    if (!isNaN(num) || num !== 0) {
 
         soma = soma + num;
         contador++;

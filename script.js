@@ -17,5 +17,5 @@ do {
 
 let media = contador ? soma / contador: 0;
 
-alert(`\nQuantidade de Números: ${contador} \nSoma: ${soma} \nMédia: ${media}`);
+alert(`\nQuantidade de Números: ${contador} \nSoma: ${soma.toFixed(2)} \nMédia: ${media.toFixed(2)}`);
 

@@ -1,7 +1,10 @@
-let soma = 0;
+let num = Number(prompt("Insira um número: "));
+let ResFinal = "";
 
-for (let i = 1; i <= 10; i++){
-    soma = soma + i;
+for (let i = 1; i <= 10; i++) {
+    let calculo = num * i
 
-    console.log(`Número atual: ${i} | Soma acumulada: ${soma}`);}
-alert(`Resultado final: ${soma}`);
+    ResFinal += `${num} * ${i} = ${calculo}\n`
+}
+
+alert(`A tabuada do ${num} é: \n${ResFinal}`);

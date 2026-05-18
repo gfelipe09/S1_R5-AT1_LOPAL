@@ -6,7 +6,12 @@ do {
 
     num = Number(prompt("Insira um número qualquer: "));
 
-    if (!isNaN(num) || num !== 0) {
+    if (isNaN(num)) {
+
+        alert("Você não digitou um número!");
+
+    }
+    else if (num !== 0) {
 
         soma = soma + num;
         contador++;
@@ -15,7 +20,7 @@ do {
 
 } while (num !== 0);
 
-let media = contador ? soma / contador: 0;
+let media = contador ? soma / contador : 0;
 
 alert(`\nQuantidade de Números: ${contador} \nSoma: ${soma.toFixed(2)} \nMédia: ${media.toFixed(2)}`);
 
